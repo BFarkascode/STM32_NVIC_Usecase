@@ -82,7 +82,7 @@ As expected, the absolute memory position for the vector table and the isr_vecto
 ### Boot
 We modify the linker file to have the boot’s FLASH memory be only 32 kbyte and end at 0x8007fff. This will prevent the boot and the app to accidentally corrupt each other. The boot's isr_vector section will be put at 0x8000000, the vector table generated at 0x800000 as well (both the standard values).
 
-###Leap of faith
+### Leap of faith
 As seen from the memory allocations, from a memory management point of view, the app’s memory addresses would not be existent for the boot and vice versa. This technically means that we are telling the mcu that it should take a “leap of faith” into an unknown memory location whenever we are switching between the two areas.
 
 Mind, the mcu WILL totally execute such a leap of faith no matter what and then crash if it does not land on a proper vector. Our job is to ensure that it will land on such a vector.
