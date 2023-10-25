@@ -6,7 +6,7 @@ This is a project to showcase, how/what/where/why nested vector controls (NVIC) 
 ## General description
 The project will consist of two, separate elements:
 1) The app (called “NVIC_Usecase_Blinky”), a simple Blinky example created relying on the findings in the NVMDriver project
-2) The boot (called “NVIC_Usecase”), a simple bootloader prototype
+2) The boot (called “NVIC_Usecase_Boot”), a simple bootloader prototype
 The two elements will be stand-alone and would need to be executed separately to prepare the mcu for the project. (It is possible to bundle them together, albeit doing so would execute the app after the boot independently to the boot, something we don’t want to do.)
 
 Technically, what we will do is
@@ -87,6 +87,17 @@ As seen from the memory allocations, from a memory management point of view, the
 
 Mind, the mcu WILL totally execute such a leap of faith no matter what and then crash if it does not land on a proper vector. Our job is to ensure that it will land on such a vector.
 
+To execute the jump properly, we need to set the stack pointer to a new place and then reset the boot/app by calling its reset vector in their designated vector table. The setting and the calling is done by interacting with the known physical memory addresses of these pointers (benefit of the NVIC).
+
 ## User guide
 
+The codes provided are self-containing.
+
+Of note, one MUST execute the app first thus placing all the necessary machine code to the right place in memory, followed by the boot. The boot will then navigate to the app if/when told to.
+
+The app, apart from being put to a designated memory position, is just a simple Blinky that can be executed standalone without a problem.
+
+The boot can run two functions, one to do the jump to the app, the other to reboot. Once the jump is executed, the mcu will leave the boot completely behind and execute the app as if it had been executed as a standalone app.
+
+To prove that we actually have a jump, consult the serial output of the mcu.
 
