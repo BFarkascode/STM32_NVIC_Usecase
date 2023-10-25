@@ -18,7 +18,9 @@ NVICs of the boot and the app will be used to navigate between a bootloader and 
 Findings discussed within the STM32_NVMDriver project (linker file, memory locations) will be used extensively in this project. As such, it is HIGHLY recommended to check that project out before taking a look at this one. For all intents and purposes, I will assume that all the information shared there have already been understood properly.
 The absolutely relevant sections in the refman to use NVICs (I am using the refman for the L0x3 here):
 -	12.3. Interrupt and exception vectors: a table of the vector table, where the vectors are, if they can be modified and what they do.
+
 That’s it, only two pages.
+
 Frankly, that hasn’t been enough for me to understand, what they are doing, so let me explain by my own words, what NVICs are.
 
 ### NVIC
