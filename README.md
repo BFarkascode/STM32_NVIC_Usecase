@@ -69,6 +69,8 @@ Taking a look into (2), that part we have already seen in the STM32_NVMDriver pr
 
 Failing to either assign the memory location for the vector table properly or to properly generate it at the right place will mean that the app will refuse to execute: the mcu will not be able to speed dial the stack pointer to find the app’s start position, then reset all functions to execute it.
 
+Also, extremely important to remember: NEVER EVER goof around with the NVIC while being in an IRQ! Since IRQs are executed outside the regular program loop, if you move around the vector pointers, the code simply would not be able to return to the point where it was interrupted by the IRQ!
+
 ## Particularities
 
 ### App
