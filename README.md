@@ -4,7 +4,6 @@ Usecase for the nested vector controller (NVIC)
 This is a project to showcase, how/what/where/why nested vector controls (NVIC) are.
 
 ## General description
-This is a project to showcase, how/what/where/why nested vector controls (NVIC) are.
 The project will consist of two, separate elements:
 1) The app (called “NVIC_Usecase_Blinky”), a simple Blinky example created relying on the findings in the NVMDriver project
 2) The boot (called “NVIC_Usecase”), a simple bootloader prototype
