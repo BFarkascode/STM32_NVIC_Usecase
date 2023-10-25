@@ -8,6 +8,7 @@ The project will consist of two, separate elements:
 1) The app (called “NVIC_Usecase_Blinky”), a simple Blinky example created relying on the findings in the NVMDriver project
 2) The boot (called “NVIC_Usecase”), a simple bootloader prototype
 The two elements will be stand-alone and would need to be executed separately to prepare the mcu for the project. (It is possible to bundle them together, albeit doing so would execute the app after the boot independently to the boot, something we don’t want to do.)
+
 Technically, what we will do is
 - define a simple Blinky app at a certain memory address
 - define a boot that will execute a precise jump from the executable section of the boot to the executable section of the app.
