@@ -1,8 +1,15 @@
 /*
- * AppManager.h						v.1.0.
- *
  *  Created on: 26 Oct 2023
- *      Author: Balazs Farkas
+ *  Project: STM32_NVIC_Usecase/NVIC_Usecase_Boot
+ *  File: AppManager.h
+ *  Author: BalazsFarkas
+ *  Processor: STM32L053R8
+ *  Compiler: ARM-GCC (STM32 IDE)
+ *  Program version: 1.0
+ *  Program description: N/A
+ *  Hardware description/pin distribution: N/A
+ *  Modified from: N/A
+ *  Change history: N/A
  */
 
 #ifndef INC_APPMANAGER_CUSTOM_H_
