@@ -1,15 +1,13 @@
 /* USER CODE BEGIN Header */
 /**
- * Project: STM32_NVIC_Usecase/NVIC_Usecase_Blinky
- * File: main.c
- * Author: BalazsFarkas
- * Processor: STM32L053R8
- * Compiler: ARM-GCC (STM32 IDE)
- * Program version: 1.0
- * Program description: N/A
- * Hardware description/pin distribution: N/A
- * Modified from: N/A
- * Change history: N/A
+ *  Author: BalazsFarkas
+ *  Project: STM32_NVIC_Usecase/NVIC_Usecase_Blinky
+ *  Processor: STM32L053R8
+ *  Compiler: ARM-GCC (STM32 IDE)
+ *  Program version: 1.0
+ *  File: main.c
+ *  Hardware description/pin distribution: LED on PA5, EXTI13 push button on PC13
+ *  Change history: N/A
 
   ******************************************************************************
   * @file           : main.c
