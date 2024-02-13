@@ -1,4 +1,12 @@
 /**
+ *  Author: BalazsFarkas
+ *  Project: STM32_NVIC_Usecase/NVIC_Usecase_Blinky
+ *  Processor: STM32L053R8
+ *  Compiler: ARM-GCC (STM32 IDE)
+ *  Program version: 1.0
+ *  File: system_stm32l0xx.c
+ *  Change history: N/A
+
   ******************************************************************************
   * @file    system_stm32l0xx.c
   * @author  MCD Application Team
