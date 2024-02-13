@@ -6,7 +6,7 @@
  *  Compiler: ARM-GCC (STM32 IDE)
  *  Program version: 1.0
  *  File: main.c
- *  Hardware description/pin distribution: LED on PA5, EXTI13 push button on PC13
+ *  Hardware description/pin distribution: LED on PA5
  *  Change history: N/A
 
   ******************************************************************************
